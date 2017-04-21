@@ -86,7 +86,8 @@ h1 {
 	/*--agileinfo--*/
 	/*--wthree--*/
 	padding: 50px;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(3,54,73, 0.8);
+	color: rgb(232,221,203);
 }
 
 h2 {
