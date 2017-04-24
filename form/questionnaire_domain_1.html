@@ -1,0 +1,459 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Responsive Admin</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/form.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+     
+           
+          
+    <div id="wrapper">
+         <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        World Deafblind Indicators Center
+
+                    </a>
+                    
+                </div>
+              
+                <span class="logout-spn" >
+                  <a href="#" style="color:#fff;">logout</a>  
+
+                </span>
+            </div>
+        </div>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                 
+
+
+                    <li>
+                        <a href="questionnaire_intro.html" ><i class="fa fa-book "></i>Introduction</a>
+                    </li>
+                    <li class="active-link">
+                        <a href="questionnaire_domain_1.html" ><i class="fa fa-book "></i>Domain 1</a>
+                    </li>
+                    <li>
+                        <a href="questionnaire_domain_2.html" ><i class="fa fa-book "></i>Domain 2</a>
+                    </li>
+                    <li>
+                        <a href="questionnaire_domain_3.html" ><i class="fa fa-book "></i>Domain 3</a>
+                    </li>
+                    <li>
+                        <a href="questionnaire_domain_4.html" ><i class="fa fa-book "></i>Domain 4</a>
+                    </li>
+                    <li>
+                        <a href="questionnaire_domain_5.html" ><i class="fa fa-book "></i>Domain 5</a>
+                    </li>
+                    <li>
+                        <a href="questionnaire_domain_6.html" ><i class="fa fa-book "></i>Domain 6</a>
+                    </li>
+                    <li>
+                        <a href="questionnaire_domain_7.html" ><i class="fa fa-book "></i>Domain 7</a>
+                    </li>
+                    <li>
+                        <a href="questionnaire_submission.html" ><i class="fa fa-book "></i>Submission</a>
+                    </li>
+                  
+                    
+                </ul>
+                            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-lg-12">
+                     <h2>Domain 1: Deafblindness Rates / Demographics</h2>   
+                    </div>
+                </div>              
+                 <!-- /. ROW  -->
+                  <hr />
+                  <div class="row">
+                   <div class="col-lg-12 col-md-12">
+          <form action="#" method="post">
+
+          <div>
+            <div>
+              <label>1. Total population of the country</label>
+              <span data-tooltip="Population according to EUROSTAT for 2013 or the last available year">
+                <i class="fa fa-question-circle"  aria-hidden="true"></i>
+              </span>
+            </div>
+            <div>
+              <select>
+                <option value="single">Recognised statistic</option>
+                <option value="two way">Estimate</option>
+                <option value="two way">Unknown</option>
+              </select>
+              <label class="lbl-number">Number: </label>
+              <input>
+            </div>
+          </div>
+          <div >
+            <div >
+              <label>2. Is there a official census figure for deafblind people?</label>
+              <span data-tooltip="Some countries and regions have a census, others not. This questionnaire should show this difference">
+                <i class="fa fa-question-circle"  aria-hidden="true"></i>
+              </span>
+            </div>
+            <div >
+              <select>
+                <option value="single">Yes</option>
+                <option value="two way">No</option>
+                <option value="two way">Unknown</option>
+              </select>
+              <label class="lbl-number">Number: </label>
+              <input >
+            </div>
+            
+          </div>
+          <div >
+            <div >
+              <label>3. Ratio of total deafblind people per 100.000 population believed to be in your country</label>
+              <span data-tooltip="Some ratios usually considered are 5, 15, 20, 40 or 400 depending on the definition and other internal reasons">
+                <i class="fa fa-question-circle"  aria-hidden="true"></i>
+              </span>
+            </div>
+            <div >
+              <select>
+                <option value="single">Recognised statistic</option>
+                <option value="two way">Estimate</option>
+                <option value="two way">Unknown</option>
+              </select>
+              <label class="lbl-number">Number: </label>
+              <input >
+            </div>
+            
+          </div>
+
+          <div >
+            <div >
+              <label>4.a Total number of identified deafblind people</label>
+            </div>
+            <div >
+              <select>
+                <option value="single">Recognised statistic</option>
+                <option value="two way">Estimate</option>
+                <option value="two way">Unknown</option>
+              </select>
+              <label class="lbl-number">Number: </label>
+              <input >
+            </div>
+            
+          </div>
+          <div >
+            <div >
+              <label>4.b Total number of older deafblind people</label>
+              <span data-tooltip="Older than 65 years">
+                <i class="fa fa-question-circle"  aria-hidden="true"></i>
+              </span>
+            </div>
+            <div >
+              <select>
+                <option value="single">Recognised statistic</option>
+                <option value="two way">Estimate</option>
+                <option value="two way">Unknown</option>
+              </select>
+              <label class="lbl-number">Number: </label>
+              <input >
+            </div>
+            
+          </div>
+
+          <div >
+            <div >
+              <label>3. Ratio of total deafblind people per 100.000 population believed to be in your country</label>
+              <span data-tooltip="Some ratios usually considered are 5, 15, 20, 40 or 400 depending on the definition and other internal reasons">
+                <i class="fa fa-question-circle"  aria-hidden="true"></i>
+              </span>
+            </div>
+            <div >
+              <select>
+                <option value="single">Recognised statistic</option>
+                <option value="two way">Estimate</option>
+                <option value="two way">Unknown</option>
+              </select>
+              <label class="lbl-number">Number: </label>
+              <input >
+            </div>
+            
+          </div>
+
+
+
+          <div >
+            <div >
+              <label>5.a Total number of identified deafblind people receiving specific services</label>
+            </div>
+            <div >
+              <select>
+                <option value="single">Recognised statistic</option>
+                <option value="two way">Estimate</option>
+                <option value="two way">Unknown</option>
+              </select>
+              <label class="lbl-number">Number: </label>
+              <input >
+            </div>
+            
+          </div>
+          <div >
+            <div >
+              <label>5.b Total number of older deafblind people receiving specific services</label>
+              <span data-tooltip="Older than 65 years">
+                <i class="fa fa-question-circle"  aria-hidden="true"></i>
+              </span>
+            </div>
+            <div >
+              <select>
+                <option value="single">Recognised statistic</option>
+                <option value="two way">Estimate</option>
+                <option value="two way">Unknown</option>
+              </select>
+              <label class="lbl-number">Number: </label>
+              <input >
+            </div>
+            
+          </div>
+
+          <div >
+            <div >
+              <label>6.a Total number of male identified deafblind people</label>
+            </div>
+            <div >
+              <select>
+                <option value="single">Recognised statistic</option>
+                <option value="two way">Estimate</option>
+                <option value="two way">Unknown</option>
+              </select>
+              <label class="lbl-number">Number: </label>
+              <input >
+            </div>
+            
+          </div>
+          <div >
+            <div >
+              <label>6.b Total number of female identified deafblind people</label>
+            </div>
+            <div >
+              <select>
+                <option value="single">Recognised statistic</option>
+                <option value="two way">Estimate</option>
+                <option value="two way">Unknown</option>
+              </select>
+              <label class="lbl-number">Number: </label>
+              <input >
+            </div>
+            
+          </div>
+
+          <div >
+            <div >
+              <label>7.a Are deafblind people prioritized as candidates for cochlear implant?</label>
+            </div>
+            <div >
+              <select>
+                <option value="single">Yes</option>
+                <option value="two way">No</option>
+                <option value="two way">Unknown</option>
+              </select>
+            </div>
+            
+          </div>
+          <div >
+            <div >
+              <label>7.b Are they a priority for bilateral implants?</label>
+            </div>
+            <div >
+              <select>
+                <option value="single">Yes</option>
+                <option value="two way">No</option>
+                <option value="two way">Unknown</option>
+              </select>
+            </div>
+            
+          </div>
+          <div >
+            <div >
+              <label>8. How many deafblind people have additional impairments or conditions?</label>
+              <span data-tooltip="Orthopaedic/physical, conditions-cognitive, conditions-behavioural, complex health care needs, communication, speech/language">
+                <i class="fa fa-question-circle"  aria-hidden="true"></i>
+              </span>
+            </div>
+            <div >
+              <select>
+                <option value="single">Recognised statistic</option>
+                <option value="two way">Estimate</option>
+                <option value="two way">Unknown</option>
+              </select>
+              <label class="lbl-number">Number: </label>
+              <input >
+            </div>
+            
+          </div>
+          <div >
+            <div >
+              <label>9.a Number of identified deafblind people living at home (with parents, relatives, foster)?</label>
+            </div>
+            <div >
+              <select>
+                <option value="single">Recognised statistic</option>
+                <option value="two way">Estimate</option>
+                <option value="two way">Unknown</option>
+              </select>
+              <label class="lbl-number">Number: </label>
+              <input >
+            </div>
+            
+          </div>
+          <div >
+            <div >
+              <label>9.b.1 Number of identified deafblind people living at Residential facility?</label>
+            </div>
+            <div >
+              <input class="agilecode" type="tel" name="Area Code" required="">
+              <label class="lbl-number">Available places: </label>
+              <input >
+            </div>
+            
+          </div>
+          <div >
+            <div >
+              <label>9.b.2 Number of identified deafblind people living at Supported living?</label>
+            </div>
+            <div >
+              <input class="agilecode" type="tel" name="Area Code" required="">
+              <label class="lbl-number">Available places: </label>
+              <input >
+            </div>
+            
+          </div>
+          <div >
+            <div >
+              <label>9.b.3 Number of identified deafblind people living Independent (alone or unsheltered)?</label>
+            </div>
+            <div >
+              <input class="agilecode" type="tel" name="Area Code" required="">
+              <label class="lbl-number">Available places: </label>
+              <input >
+            </div>
+            
+          </div>
+          <div >
+            <div >
+              <label>10.a Number of identified deafblind people using as Sign Language communication method:</label>
+            </div>
+            <div >
+              <select>
+                <option value="single">Recognised statistic</option>
+                <option value="two way">Estimate</option>
+                <option value="two way">Unknown</option>
+              </select>
+              <label class="lbl-number">Number: </label>
+              <input >
+            </div>
+            
+          </div>
+
+          <div >
+            <div >
+              <label>10.b Number of identified deafblind people using as Symbolic Communication communication method:</label>
+            </div>
+            <div >
+              <select>
+                <option value="single">Recognised statistic</option>
+                <option value="two way">Estimate</option>
+                <option value="two way">Unknown</option>
+              </select>
+              <label class="lbl-number">Number: </label>
+              <input >
+            </div>
+            
+          </div>
+
+          <div >
+            <div >
+              <label>10.c Number of identified deafblind people using as Speech communication method:</label>
+            </div>
+            <div >
+              <select>
+                <option value="single">Recognised statistic</option>
+                <option value="two way">Estimate</option>
+                <option value="two way">Unknown</option>
+              </select>
+              <label class="lbl-number">Number: </label>
+              <input >
+            </div>
+            
+          </div>
+
+          <div>
+            <div>
+              <span>
+                <label>Comments (If necessary)</label>
+                <label></label>
+              </span>
+            </div>
+            <div>
+              <textarea rows="5" cols="100"></textarea>
+            </div>
+            
+          </div>
+          <div>
+             <a href="#" class="btn btn-success">Save</a>
+             <a href="questionnaire_domain_2.html" class="btn btn-primary">Go to Next Domain</a>
+          </div>
+        </form>
+            </div>           
+                    </div>
+                  <!-- /. ROW  --> 
+    </div>
+
+             <!-- /. PAGE INNER  -->
+            </div>
+         <!-- /. PAGE WRAPPER  -->
+        </div>
+    <div class="footer">
+      
+    
+            <div class="row">
+                <div class="col-lg-12" >
+                    &copy;  2014 yourdomain.com | Design by: <a href="http://binarytheme.com" style="color:#fff;" target="_blank">www.binarytheme.com</a>
+                </div>
+            </div>
+        </div>
+          
+
+     <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    
+   
+</body>
+</html>

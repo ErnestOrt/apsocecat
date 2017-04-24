@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Responsive Admin</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+     
+           
+          
+    <div id="wrapper">
+         <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                    Deafblind Indicators
+                       
+                    </a>
+                    
+                </div>
+              
+                <span class="logout-spn" >
+                  <a href="#" style="color:#fff;">logout</a>  
+
+                </span>
+            </div>
+        </div>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                 
+
+
+                    <li>
+                        <a href="campains.html" ><i class="fa fa-book "></i>Campains</a>
+                    </li>
+                    <li>
+                        <a href="new_campain.html" ><i class="fa fa-file-text "></i>New Campain</a>
+                    </li>
+                    <li>
+                        <a href="regions.html" ><i class="fa fa-globe "></i>Regions</a>
+                    </li>
+                    <li class="active-link">
+                        <a href="reports.html" ><i class="fa fa-pencil "></i>Reports</a>
+                    </li>
+                  
+                    
+                </ul>
+                            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-lg-12">
+                     <h2>Reports Zone</h2>   
+                    </div>
+                </div>              
+                 <!-- /. ROW  -->
+                  <hr />
+				<div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <h5> <a href="#" class="btn btn-primary">Compare Campains and/or Regions</a></h5>
+                    </div>
+                    </div>
+                    <div class="row">
+                     <div class="col-lg-6 col-md-6">
+                        
+                        <br />
+                       <form class="form-horizontal">
+                          <div class="form-group form-group-sm">
+                            <label class="col-sm-2 control-label" for="formGroupInputLarge">Campain</label>
+                            <div class="col-sm-10">
+                              <select class="form-control">
+                                    <option>Select one...</option>
+                                  <option>Spain 2016</option>
+                                  <option>Europe 2016</option>
+                                  <option>Big cities 2016</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group form-group-sm">
+                            <label class="col-sm-2 control-label" for="formGroupInputSmall">Region</label>
+                            <div class="col-sm-10">
+                              <select class="form-control">
+                               <option>Select one...</option>
+                                  <option>Madrid CA</option>
+                                  <option>Catalunya</option>
+                                  <option>Aragón</option>
+                              </select>
+                            </div>
+                          </div>
+                        </form>
+                        <br />
+                      
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        
+                        <br />
+                       <form class="form-horizontal">
+                          <div class="form-group form-group-sm">
+                            <label class="col-sm-2 control-label" for="formGroupInputLarge">Campain</label>
+                            <div class="col-sm-10">
+                              <select class="form-control">
+                               <option>Select one...</option>
+                                  <option>Spain 2016</option>
+                                  <option>Europe 2016</option>
+                                  <option>Big cities 2016</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group form-group-sm">
+                            <label class="col-sm-2 control-label" for="formGroupInputSmall">Region</label>
+                            <div class="col-sm-10">
+                              <select class="form-control">
+                               <option>Select one...</option>
+                                  <option>Madrid CA</option>
+                                  <option>Catalunya</option>
+                                  <option>Aragón</option>
+                              </select>
+                            </div>
+                          </div>
+                        </form>
+                        <br />
+                      
+                    </div>
+                    </div>
+
+                       <!-- /. ROW  --> 
+
+                       <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <canvas id="myChart" width="50" height="25"></canvas>
+                        </div>
+                       </div>
+    </div>
+             <!-- /. PAGE INNER  -->
+            </div>
+         <!-- /. PAGE WRAPPER  -->
+        </div>
+    <div class="footer">
+      
+    
+            <div class="row">
+                <div class="col-lg-12" >
+                    &copy;  2014 yourdomain.com | Design by: <a href="http://binarytheme.com" style="color:#fff;" target="_blank">www.binarytheme.com</a>
+                </div>
+            </div>
+        </div>
+          
+
+     <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="Chart.js"></script>
+<script>
+    var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Denmark", "Deutchland", "Spain", "Grecee", "Poland", "Portugal"],
+        datasets: [{
+            label: '# of population',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        },
+        {
+            label: '# of deafblind',
+            data: [8, 7, 1, 2, 1, 1],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
+   
+</body>
+</html>

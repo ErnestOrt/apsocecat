@@ -27,7 +27,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="assets/img/logo.png" />
+                        World Deafblind Indicators Center
 
                     </a>
                     
@@ -49,11 +49,14 @@
                     <li class="active-link">
                         <a href="campains.html" ><i class="fa fa-book "></i>Campains</a>
                     </li>
-                    <li class="active-link">
+                    <li>
                         <a href="new_campain.html" ><i class="fa fa-file-text "></i>New Campain</a>
                     </li>
-                    <li class="active-link">
+                    <li>
                         <a href="regions.html" ><i class="fa fa-globe "></i>Regions</a>
+                    </li>
+                    <li>
+                        <a href="reports.html" ><i class="fa fa-pencil"></i>Reports</a>
                     </li>
                   
                     
@@ -83,6 +86,7 @@
                                         <th>Init date</th>
                                         <th># question</th>
                                         <th>% Completed</th>
+                                        <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -98,6 +102,7 @@
 					                            </div>
 					                        </div>
 				                        </td>
+				                        <td><button type="button" class="btn btn-primary">Add</button> <button type="button" class="btn btn-danger">Delete</button></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
@@ -111,6 +116,7 @@
 					                            </div>
 					                        </div>
 				                        </td>
+				                        <td><button type="button" class="btn btn-primary">Add</button> <button type="button" class="btn btn-danger">Delete</button></td>
                                     </tr>
                                     
                                 </tbody>
@@ -132,10 +138,11 @@
                                         <th>Init date</th>
                                         <th>Deadline</th>
                                         <th>% Completed</th>
+                                        <th>Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="success">
+                                    <tr class="success" data-toggle="modal" data-target="#myModal">
                                         <td>1</td>
                                         <td>Catalonia</td>
                                         <td>narwOSsX45</td>
@@ -148,6 +155,7 @@
 					                            </div>
 					                        </div>
 				                        </td>
+				                        <td><button type="button" class="btn btn-danger">Delete</button></td>
                                     </tr>
                                     <tr class="success">
                                         <td>2</td>
@@ -162,6 +170,7 @@
 					                            </div>
 					                        </div>
 				                        </td>
+				                         <td><button type="button" class="btn btn-danger">Delete</button></td>
                                     </tr>
                                      <tr class="warning">
                                         <td>3</td>
@@ -176,6 +185,7 @@
 					                            </div>
 					                        </div>
 				                        </td>
+				                         <td><button type="button" class="btn btn-danger">Delete</button></td>
                                     </tr>
                                      <tr class="danger">
                                         <td>4</td>
@@ -189,14 +199,107 @@
 					                            </div>
 					                        </div>
 				                        </td>
+				                         <td><button type="button" class="btn btn-danger">Delete</button></td>
                                     </tr>
                                 </tbody>
                             </table>
+                            <div id="myModal" class="modal fade" role="dialog">
+							  <div class="modal-dialog modal-lg">
+
+							    <!-- Modal content-->
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal">&times;</button>
+							        <h4 class="modal-title">Questionnaire Details</h4>
+							      </div>
+							      <div class="modal-body">
+							       <div class="row">
+							       <div class="col-lg-6 col-md-6 col-md-offset-3 col-lg-offset-3">
+							       <table class="table">
+					                    <tbody>
+					                      <tr>
+					                        <td><label for="usr">Campain:</label></td>
+					                        <td>Spain 2016</td> 
+					                      </tr>
+					                       <tr>
+					                        <td><label for="usr">Region:</label></td>
+					                        <td>Catalonia</td> 
+					                      </tr>
+					                       <tr>
+					                        <td><label for="usr">Code:</label></td>
+					                        <td>55LNyUOL</td> 
+					                      </tr>
+					                       <tr>
+					                        <td><label for="usr">Init Date</label></td>
+					                        <td>22-05-2017</td> 
+					                      </tr>
+					                      <tr>
+					                        <td><label for="usr">End Date</label></td>
+					                        <td>22-09-2017</td> 
+					                      </tr>
+					                      <tr>
+					                        <td><label for="usr">% Completed</label></td>
+					                        <td>55%</td> 
+					                      </tr>
+					                    </tbody>
+					                  </table>
+					                  </div>
+					               <div class="col-lg-12 col-md-12">
+							       <div class="form-group">
+									  <label for="usr">People responsible for completing questionnaire:</label>
+									</div>
+							       	<table class="table">
+								       	 <thead>
+		                                    <tr>
+		                                        <th>Name</th>
+		                                        <th>E-mail</th>
+		                                        <th>Phone</th>
+		                                        <th>Position</th>
+		                                        <th>Organitzation</th>
+		                                    </tr>
+		                                </thead>
+					                    <tbody>
+					                      <tr>
+					                        <td><input type="text" class="form-control" id="usr"></td>
+					                         <td><input type="text" class="form-control" id="usr"></td>
+					                          <td><input type="text" class="form-control" id="usr"></td>
+					                           <td><input type="text" class="form-control" id="usr"></td>
+					                            <td><input type="text" class="form-control" id="usr"></td>
+					                      </tr>
+					                      <tr>
+					                        <td><input type="text" class="form-control" id="usr"></td>
+					                         <td><input type="text" class="form-control" id="usr"></td>
+					                          <td><input type="text" class="form-control" id="usr"></td>
+					                           <td><input type="text" class="form-control" id="usr"></td>
+					                            <td><input type="text" class="form-control" id="usr"></td>
+					                      </tr>
+					                      <tr>
+					                        <td><input type="text" class="form-control" id="usr"></td>
+					                         <td><input type="text" class="form-control" id="usr"></td>
+					                          <td><input type="text" class="form-control" id="usr"></td>
+					                           <td><input type="text" class="form-control" id="usr"></td>
+					                            <td><input type="text" class="form-control" id="usr"></td>
+					                      </tr>
+					                      
+					                     
+					                    </tbody>
+					                  </table>
+					                   </div>
+							       </div>
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+							      </div>
+							    </div>
+
+							  </div>
+							</div>
                         </div>
                     </div>
                     </div>
                   <!-- /. ROW  --> 
     </div>
+
              <!-- /. PAGE INNER  -->
             </div>
          <!-- /. PAGE WRAPPER  -->
