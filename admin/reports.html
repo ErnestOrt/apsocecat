@@ -95,47 +95,7 @@
                               </select>
                             </div>
                           </div>
-                          <div class="form-group form-group-sm">
-                            <label class="col-sm-2 control-label" for="formGroupInputSmall">Region</label>
-                            <div class="col-sm-10">
-                              <select class="form-control">
-                               <option>Select one...</option>
-                                  <option>Madrid CA</option>
-                                  <option>Catalunya</option>
-                                  <option>Aragón</option>
-                              </select>
-                            </div>
-                          </div>
-                        </form>
-                        <br />
-                      
-                    </div>
-                    <div class="col-lg-6 col-md-6">
                         
-                        <br />
-                       <form class="form-horizontal">
-                          <div class="form-group form-group-sm">
-                            <label class="col-sm-2 control-label" for="formGroupInputLarge">Campain</label>
-                            <div class="col-sm-10">
-                              <select class="form-control">
-                               <option>Select one...</option>
-                                  <option>Spain 2016</option>
-                                  <option>Europe 2016</option>
-                                  <option>Big cities 2016</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="form-group form-group-sm">
-                            <label class="col-sm-2 control-label" for="formGroupInputSmall">Region</label>
-                            <div class="col-sm-10">
-                              <select class="form-control">
-                               <option>Select one...</option>
-                                  <option>Madrid CA</option>
-                                  <option>Catalunya</option>
-                                  <option>Aragón</option>
-                              </select>
-                            </div>
-                          </div>
                         </form>
                         <br />
                       
@@ -146,7 +106,30 @@
 
                        <div class="row">
                         <div class="col-lg-6 col-md-6">
-                            <canvas id="myChart" width="50" height="25"></canvas>
+                            <h3>S0/S1/S2/S3/S4/S5/S9/S21/S22/S32/S51</h3>
+                            <canvas id="barChartOneDomain" width="50" height="25"></canvas>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <h3>S6/S7</h3>
+                            <canvas id="barChartTwoDomain" width="50" height="25"></canvas>
+                        </div>
+                       </div>
+
+                        <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <h3>S8/S71</h3>
+                            <canvas id="barChartThreeDomain" width="50" height="25"></canvas>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <h3>S31/S41/S42/S43/S44/S61/S62</h3>
+                            <canvas id="barChartTwoDomainNonStacked" width="50" height="25"></canvas>
+                        </div>
+                       </div>
+
+                       <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <h3>Compare</h3>
+                            <canvas id="radarChart" width="50" height="25"></canvas>
                         </div>
                        </div>
     </div>
@@ -176,9 +159,9 @@
     <script src="assets/js/chart.js"></script>
     <script src="Chart.js"></script>
 <script>
-    var ctx = document.getElementById("myChart");
+    var ctx = document.getElementById("barChartOneDomain");
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'horizontalBar',
     data: {
         labels: ["Denmark", "Deutchland", "Spain", "Grecee", "Poland", "Portugal"],
         datasets: [{
@@ -201,37 +184,288 @@ var myChart = new Chart(ctx, {
                 'rgba(255, 159, 64, 1)'
             ],
             borderWidth: 1
-        },
-        {
-            label: '# of deafblind',
-            data: [8, 7, 1, 2, 1, 1],
+        }]
+    },
+    options: {
+        scales: {
+            xAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+
+ var ctx2 = document.getElementById("barChartTwoDomain");
+var myChart2 = new Chart(ctx2, {
+    type: 'horizontalBar',
+    data: {
+        labels: ["Denmark", "Deutchland", "Spain", "Grecee", "Poland", "Portugal"],
+        datasets: [{
+            label: '# of population',
+            data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2))',
+                'rgba(255, 99, 132, 0.2)'
             ],
             borderColor: [
                 'rgba(255,99,132,1)',
+                'rgba(255,99,132,1)',
+                'rgba(255,99,132,1)',
+                'rgba(255,99,132,1)',
+                'rgba(255,99,132,1)',
+                'rgba(255,99,132,1)'
+            ],
+            borderWidth: 1
+        },
+        {
+            label: '# of population',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)'
+            ],
+            borderColor: [
                 'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+            scales: {
+                xAxes: [{
+                    stacked: true,
+                    ticks: {
+                        beginAtZero: true
+                    },
+                    scaleLabel: {
+                        display: false
+                    },
+
+                }],
+                yAxes: [{
+                    stacked: true
+                }]
+            }
+    }
+});
+
+var ctx3 = document.getElementById("barChartThreeDomain");
+var myChart3 = new Chart(ctx3, {
+    type: 'horizontalBar',
+    data: {
+        labels: ["Denmark", "Deutchland", "Spain", "Grecee", "Poland", "Portugal"],
+        datasets: [{
+            label: '# of population',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2))',
+                'rgba(255, 99, 132, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(255,99,132,1)',
+                'rgba(255,99,132,1)',
+                'rgba(255,99,132,1)',
+                'rgba(255,99,132,1)',
+                'rgba(255,99,132,1)'
+            ],
+            borderWidth: 1
+        },
+        {
+            label: '# of population',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)'
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)'
+            ],
+            borderWidth: 1
+        },
+        {
+            label: '# of population',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 159, 64, 1)',
                 'rgba(255, 159, 64, 1)'
             ],
             borderWidth: 1
         }]
     },
     options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true
-                }
-            }]
+            scales: {
+                xAxes: [{
+                    stacked: true,
+                    ticks: {
+                        beginAtZero: true
+                    },
+                    scaleLabel: {
+                        display: false
+                    },
+
+                }],
+                yAxes: [{
+                    stacked: true
+                }]
+            }
+    }
+});
+
+
+ var ctx4 = document.getElementById("barChartTwoDomainNonStacked");
+var myChart4 = new Chart(ctx4, {
+    type: 'horizontalBar',
+    data: {
+        labels: ["Denmark", "Deutchland", "Spain", "Grecee", "Poland", "Portugal"],
+        datasets: [{
+            label: '# of population',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2))',
+                'rgba(255, 99, 132, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(255,99,132,1)',
+                'rgba(255,99,132,1)',
+                'rgba(255,99,132,1)',
+                'rgba(255,99,132,1)',
+                'rgba(255,99,132,1)'
+            ],
+            borderWidth: 1
+        },
+        {
+            label: '# of population',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)'
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+            scales: {
+                xAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    },
+                    scaleLabel: {
+                        display: false
+                    },
+
+                }]
+            }
+    }
+});
+
+var dataRadar = {
+    labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+    datasets: [
+        {
+            label: "My First dataset",
+            backgroundColor: "rgba(179,181,198,0.2)",
+            borderColor: "rgba(179,181,198,1)",
+            pointBackgroundColor: "rgba(179,181,198,1)",
+            pointBorderColor: "#fff",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(179,181,198,1)",
+            data: [65, 59, 90, 81, 56, 55, 40]
+        },
+        {
+            label: "My Second dataset",
+            backgroundColor: "rgba(255,99,132,0.2)",
+            borderColor: "rgba(255,99,132,1)",
+            pointBackgroundColor: "rgba(255,99,132,1)",
+            pointBorderColor: "#fff",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(255,99,132,1)",
+            data: [28, 48, 40, 19, 96, 27, 100]
         }
+    ]
+};
+
+var ctx5 = document.getElementById("radarChart");
+var myRadarChart = new Chart(ctx5, {
+     type: 'radar',
+    data: {
+            labels: ["Denmark", "Deutchland", "Spain", "Grecee", "Poland", "Portugal","Denmark", "Deutchland", "Spain", "Grecee", "Poland", "Portugal","Denmark", "Deutchland", "Spain", "Grecee", "Poland", "Portugal"],
+            datasets: [
+                {
+                    label: "My Second dataset",
+                    backgroundColor: "rgba(255,99,132,0.2)",
+                    borderColor: "rgba(255,99,132,1)",
+                    pointBackgroundColor: "rgba(255,99,132,1)",
+                    pointBorderColor: "#fff",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: "rgba(255,99,132,1)",
+                    data: [28, 48, 40, 19, 96, 27, 100, 28, 48, 40, 19, 96, 27, 100, 28, 48, 40, 19]
+                }
+            ]
+        },
+    options: {
+            scale: {
+                ticks: {
+                    beginAtZero: true
+                }
+            }
     }
 });
 </script>
