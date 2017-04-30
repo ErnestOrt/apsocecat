@@ -112,8 +112,7 @@ a:focus {
   text-align: center;
 }
 
-#feature,
-#team {
+#feature {
   background: rgb(240,240,240);
 }
 
@@ -436,7 +435,7 @@ a:focus {
 #team .team-thumb:hover .team-des {
   color: #ffffff;
   height: 100%;
-  background-color: #c21500;
+  background-color: #21618C;
   padding-top: 30%;
   opacity: 0.9;
 }
@@ -447,7 +446,7 @@ a:focus {
 }
 
 #team .join-team {
-  background-color: #c21500;
+  background-color: #21618C;
   color: #f0f0f0;
   padding: 30px 20px;
   text-align: center;
